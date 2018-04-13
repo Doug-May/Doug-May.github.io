@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Calculator</title>
+    
+    <!--    Links to outside stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--    Links to fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Electrolize" rel="stylesheet">
+
+    <!--    links to my stylesheets-->
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/calculator.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!--    Link to Favicon-->  
+    <link rel="icon" href="/img/favicon.ico?" type="image/x-icon">
+</head>
+    
+<body>
+    
+    <div class="container">
+        <div id="header" class="container">
+            <a href="/pages/projects.html"><div id="headerButton" class="accent animated fadeInDown">
+                <h3>BACK</h3>
+            </div></a>        
+        </div>
+    </div>
+<!--    Page content here...............................................................................-->
+    <div class="fadeIn">
+        
+        <div class="container text-center">
+            <div id="calculator">
+                <div id="screen">
+                    <p id="display">0</p>
+                </div>
+                <div id="buttons">
+                    <div class="row">
+                        <div id="AC" class="col-6 button"><p class="allClear">AC</p>
+                        </div>
+                        <div class="col-3 text-center"><img id="JS" src="/img/jslogo.png">
+                        </div>
+                        <div id="divide" class="col-3 button"><p class="operator">&divide</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="seven" class="col-3 button"><p class="number">7</p>
+                        </div>
+                        <div id="eight" class="col-3 button"><p class="number">8</p>
+                        </div>
+                        <div id="nine" class="col-3 button"><p class="number">9</p>
+                        </div>
+                        <div id="multiply" class="col-3 button"><p class="operator">&times</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="four" class="col-3 button"><p class="number">4</p>
+                        </div>
+                        <div id="five" class="col-3 button"><p class="number">5</p>
+                        </div>
+                        <div id="six" class="col-3 button"><p class="number">6</p>
+                        </div>
+                        <div id="subtract" class="col-3 button"><p class="operator">-</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="one" class="col-3 button"><p class="number">1</p>
+                        </div>
+                        <div id="two" class="col-3 button"><p class="number">2</p>
+                        </div>
+                        <div id="three" class="col-3 button"><p class="number">3</p>
+                        </div>
+                        <div id="add" class="col-3 button"><p class="operator">+</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="zero" class="col-3 button"><p class="number">0</p>
+                        </div>
+                        <div id="decimal" class="col-3 button"><p class="number">.</p>
+                        </div>
+                        <div id="equals" class="col-6 button"><p class="operator">=</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="height:20px"></div>
+            </div>
+        </div>
+        
+    </div>
+<!-- End of page content................................................................................-->
+ 
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    
+<!--    Links to my JS-->
+    <script src="/js/calculator.js"></script>
+</body>
+    
+    
+</html>

@@ -1,0 +1,53 @@
+/*
+body {
+    background-color: #2b384c;
+}
+*/
+
+img {
+    height: 120px;
+    margin: 25px auto;
+}
+
+h2 {
+    transition: 200ms;
+    margin: 0px;
+}
+
+p {
+    text-indent: 0px;
+}
+
+#temp {
+    margin-top: 10px;
+    color: #5f797d;
+    cursor: pointer;
+}
+
+#temp:hover {
+    color: #d0d0d0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.flash {
+    animation: flasher 800ms normal ease-in-out infinite;
+}
+
+@keyframes flasher {
+    0% {
+        opacity: 0.3;
+       
+
+    }
+    50% {
+/*        color: #0f5399;*/
+        opacity: 1;
+       
+    }
+    100% {
+        opacity: 0.3;
+    }
+}

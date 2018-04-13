@@ -1,0 +1,39 @@
+#header {
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+}
+
+#headerButton {
+    transition: 300ms;
+    opacity: 1;
+    height: 50px;
+    width: 70px;
+    float: left;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 5px;
+}
+
+#headerButton:hover {
+    cursor: pointer;
+/*    height: 60px;*/
+    background-color: #344345;
+}
+
+#header h3 {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.block {
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.block img {
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}

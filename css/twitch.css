@@ -1,0 +1,37 @@
+body {
+    background-color: #575970;
+}
+
+.streamers {
+    background-color: #383a4c;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 40px;
+}
+
+.logo {
+    width: 100%;
+    min-width: 50px;
+    max-width: 100px;
+}
+
+.status {
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+h3 {
+    font-size: 18px;
+    color: #7865a3;
+}
+
+p {
+    font-size: 16px;
+    text-indent: 0px;
+}
+

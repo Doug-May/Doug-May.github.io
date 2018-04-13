@@ -1,0 +1,58 @@
+body {
+    background-color: #d0d0d0;
+}
+
+.colors {
+    width: 95%;
+    height: 80px;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+
+.colors:hover {
+    cursor: pointer;
+}
+
+#red {
+    margin-top: 40px;
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#black {
+    background-color: black;
+}
+
+#brown {
+    background-color: #302013;
+}
+
+#white {
+    background-color: white;
+}
+
+#gray {
+    background-color: gray;
+}
+

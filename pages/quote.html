@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Random Quote Machine</title>
+    
+    <!--    Links to outside stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--    Links to fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+    <!--    links to my stylesheets-->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/quote.css">
+
+    
+    <!--    Link to Favicon-->  
+    <link rel="icon" href="/img/favicon.ico?" type="image/x-icon">
+</head>
+    
+<body>
+<!--    Page content here...............................................................................-->
+    <div id="slowFade">
+        
+        <div id="center" class="centered hidden">
+            <p class="hidden" id="quote"></p>
+            <h2 class="hidden" id="author"></h2>
+            <div class="row text-center">
+                <div class="col-md-10">
+                    <button class="hidden" id="getQuote">NEW QUOTE</button>
+                </div>
+                
+                <div class="col-md-2">
+                    <img id="tweet" src="/img/tweet.png">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- End of page content................................................................................-->
+ 
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    
+<!--    Links to my JS-->
+    <script src="/js/quote.js"></script>
+</body>
+    
+    
+</html>

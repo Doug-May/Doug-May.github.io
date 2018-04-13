@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    
+    <!--    Links to outside stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--    Links to fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+    <!--    links to my stylesheets-->
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/weather.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    
+    <!--    Link to Favicon-->  
+    <link rel="icon" href="/img/favicon.ico?" type="image/x-icon">
+</head>
+    
+<body>
+    
+    <div class="container">
+        <div id="header" class="container">
+            <a href="/pages/projects.html"><div id="headerButton" class="accent animated fadeInDown">
+                <h3>BACK</h3>
+            </div></a>        
+        </div>
+    </div>
+    
+<!--    Page content here...............................................................................-->
+    <div class="fadeIn container text-center">
+        <div style="height: 100px"></div>
+        <h1>Current Weather</h1>
+        <div style="height:10px"></div>
+        <h2 class="flash" id="location">Getting Data...</h2>
+        <img class="hidden animated" id="icon" src="/img/weather/clearday.png"/>
+        <h2 class="animated hidden" id="summary">Sunny</h2>
+        <div class="container" style="width:130px"><h2 class="animated hidden" id="temp">52</h2></div>
+        <div style="height:40px"></div>
+        <p>Built using the <a href="https://darksky.net/dev/" target="_blank">Dark Sky API</a></p>
+        <h2><span class="animated hidden" id="warning" style="color:#9b3e3e">Make sure that geolocation services are enabled in your browser. It's also possible your browser does not support them.</span></h2>
+    </div>
+        
+        
+   
+<!-- End of page content................................................................................-->
+ 
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    
+<!--    Links to my JS-->
+    <script src="/js/weather.js"></script>
+</body>
+    
+    
+</html>

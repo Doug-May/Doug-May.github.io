@@ -1,0 +1,59 @@
+td {
+    border: 1px solid #d0d0d3;
+    width: 3px;
+    height: 3px;
+}
+
+
+.alive {
+    background-color: #151516;
+}
+
+.dead {
+  
+    background-color: #fcfdff;
+}
+
+.unseen {
+    background-color: #2d2d2d;
+    border: none;
+}
+
+table {
+    margin: 2% auto;
+    
+}
+
+#world {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+li p {
+    font-size: 13px;
+    margin:3%;
+    font-weight: 100;
+    color: #d0d0d0;
+    opacity: 0.5;
+}
+
+button {
+    margin:1%;
+    border-style: none;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+button p {
+    margin-bottom: 0px;
+    opacity: 1;
+}
+
+ol {
+    margin-left: -30px;
+}
