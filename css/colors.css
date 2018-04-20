@@ -1,14 +1,11 @@
-body {
-    background-color: #d0d0d0;
+h1 {
+   color: #d4d4d6;
 }
 
 .colors {
-    width: 95%;
-    height: 80px;
-    margin: 15px;
-    border-radius: 10px;
-    padding: 15px;
-    
+   margin: 30px;
+   border-radius: 10px;
+   padding: 15px;
 }
 
 .colors:hover {
@@ -16,16 +13,15 @@ body {
 }
 
 #red {
-    margin-top: 40px;
     background-color: red;
 }
 
 #blue {
-    background-color: blue;
+    background-color:#223b9e;
 }
 
 #orange {
-    background-color: orange;
+    background-color: #c49527;
 }
 
 #green {
@@ -33,7 +29,7 @@ body {
 }
 
 #yellow {
-    background-color: yellow;
+    background-color: #b5b536;
 }
 
 #purple {
@@ -55,4 +51,3 @@ body {
 #gray {
     background-color: gray;
 }
-

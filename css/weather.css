@@ -1,10 +1,4 @@
-/*
-body {
-    background-color: #2b384c;
-}
-*/
-
-img {
+#icon {
     height: 120px;
     margin: 25px auto;
 }
@@ -39,13 +33,9 @@ p {
 @keyframes flasher {
     0% {
         opacity: 0.3;
-       
-
     }
     50% {
-/*        color: #0f5399;*/
         opacity: 1;
-       
     }
     100% {
         opacity: 0.3;

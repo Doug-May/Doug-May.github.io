@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Magic 8 Ball</title>
-    
+
     <!--    Links to outside stylesheets-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <!--    Links to fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Lato" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+
     <!--    Link to sweetalert-->
     <script src="/js/sweetalert2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/sweetalert2.min.css">
@@ -19,19 +19,25 @@
     <!--    links to my stylesheets-->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/8Ball.css">
-    
-    <!--    Link to Favicon-->  
+
+    <!--    Link to Favicon-->
     <link rel="icon" href="./img/favicon.ico?" type="image/x-icon">
-    
+
 
 </head>
-    
+
 <body>
 <!--    Page content here...............................................................................-->
-    <div style="height: 60px"></div>
+
+<!-- Back Button -->
+<div class="container">
+    <div id="backButton">
+        <a href="../index.html#projects"><img src="../img/backButton.png" alt=""></a>
+    </div>
+</div>
+
     <div id="fadeIn">
         <div class="container text-center">
-            <h1>Magic 8 Ball</h1>
             <div style="height:70px"></div>
             <div class="centered">
                 <img id="ball" src="/img/8.png">
@@ -39,17 +45,17 @@
         </div>
     </div>
 <!-- End of page content................................................................................-->
-  
-    
+
+
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <!--    Links to my JS-->
-    <script src="/js/8Ball.js"></script>   
+    <script src="/js/8Ball.js"></script>
 
 </body>
-    
-    
+
+
 </html>

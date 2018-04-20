@@ -17,6 +17,7 @@ input[type=text] {
 }
 /* When the input field gets focus, change its width*/
 input[type=text]:focus {
+   outline: none;
     width: 90%;
     background-color: #f0f0f0;
     max-width: 550px;
@@ -120,9 +121,6 @@ input[type=text]:focus {
         opacity: 0.5;
         transform: rotate(360deg) scale(1);
     }
-    
-    
+
+
 }
-
-
-

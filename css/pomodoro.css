@@ -1,6 +1,5 @@
-body {
-    background: #383e47;
-}
+
+
 h2 {
     margin: 10px 0px;
 }
@@ -14,8 +13,9 @@ input {
     padding-left: 4%;
 }
 input:focus {
+   outline: none;
     transition: 300ms;
-    background-color: #f7f7f7;  
+    background-color: #f7f7f7;
 }
 #adjuster {
     max-width: 500px;
@@ -61,11 +61,15 @@ button {
     width: 90px;
     margin-top: 10px;
     opacity: 0.7;
-    
+
 }
 button:hover {
     cursor: pointer;
     opacity: 1;
+}
+
+button:focus{
+   outline: none;
 }
 .block {
     margin-top: 40px;
@@ -84,18 +88,18 @@ button:hover {
 .breakRed {
     opacity: 1;
     background-color: #913f3e;
-    animation: spinner 1000ms cubic-bezier(0.5, 0.47, 0.32, 1.5) infinite reverse; 
+    animation: spinner 1000ms cubic-bezier(0.5, 0.47, 0.32, 1.5) infinite reverse;
 }
 .sessionGreen {
     opacity: 1;
     background-color: #588e5a;
-    animation: spinner 1000ms cubic-bezier(0.5, 0.47, 0.32, 1.5) infinite; 
+    animation: spinner 1000ms cubic-bezier(0.5, 0.47, 0.32, 1.5) infinite;
 }
 .off {
     color:#913f3e;
 }
 .on {
-   color: #588e5a; 
+   color: #588e5a;
 }
 #audio:hover {
     cursor: pointer;
@@ -103,10 +107,10 @@ button:hover {
 @keyframes spinner {
     0% {
     }
- 
+
     50% {
         transform: rotate(270deg);
-       
+
     }
     100% {
         transform: rotate(45deg);

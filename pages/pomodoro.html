@@ -5,39 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Pomodoro Clock</title>
-    
+
     <!--    Links to outside stylesheets-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <!--    Links to fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
 
     <!--    links to my stylesheets-->
     <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="/css/pages.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/pomodoro.css">
-    
-    
-    
-    <!--    Link to Favicon-->  
+
+
+
+    <!--    Link to Favicon-->
     <link rel="icon" href="/img/pomo.ico?" type="image/x-icon">
-    
-<!--    alarm audio-->
-    
+
 </head>
-    
+
 <body>
-    
-    <div class="container">
-        <div id="header" class="container">
-            <a href="/pages/projects.html"><div id="headerButton" class="accent animated fadeInDown">
-                <h3>BACK</h3>
-            </div></a>        
-        </div>
-    </div>
-    
-    
+
+   <!-- Back Button -->
+   <div class="container">
+      <div id="backButton">
+           <a href="../index.html#projects"><img src="../img/backButton.png" alt=""></a>
+      </div>
+   </div>
+
+
 <!--    Page content here...............................................................................-->
     <div class="fadeIn">
         <audio id="alarm"><source src="/audio/alarm.mp3" type="audio/mpeg"></audio>
@@ -45,7 +41,7 @@
             <h2 class="clock"><span id="minutes">25</span>:<span class="secFix"></span><span id="seconds">00</span></h2>
             <div class="box"></div>
             <button id="startStop">Start</button>
-            
+
             <div id="adjuster" class="row text-center">
                 <div id="session" class="col-6 block">
                     <h2>Session</h2>
@@ -53,9 +49,9 @@
                         <div class="col-3"><img id="sessionDecrease" class="arrowDown" src="/img/arrowdown.png"></div>
                         <div class="col-6"><h2 class="number" id="sessionNum">25</h2></div>
                         <div class="col-3"><img id="sessionIncrease" class="arrowUp" src="/img/arrowup.png"></div>
-                    </div>     
+                    </div>
                     <input id="sessionField" type="text" placeholder="minutes..">
-                    <button id="sessionUpdate">Update</button>         
+                    <button id="sessionUpdate">Update</button>
                 </div>
                 <div id="break" class="col-6 block">
                     <h2>Break</h2>
@@ -63,27 +59,27 @@
                         <div class="col-3"><img id="breakDecrease" class="arrowDown" src="/img/arrowdown.png"></div>
                         <div class="col-6"><h2 class="number" id="breakNum">5</h2></div>
                         <div class="col-3"><img id="breakIncrease" class="arrowUp" src="/img/arrowup.png"></div>
-                    </div>     
+                    </div>
                     <input id="breakField" type="text" placeholder="minutes..">
-                    <button id="breakUpdate">Update</button>   
-                </div>   
+                    <button id="breakUpdate">Update</button>
+                </div>
             </div>
             <h2 style="font-size: 17px; margin-top:20px;">Alarm Audio: <span id="audio" class="off">OFF</span> </h2>
             <h2 id="error"></h2>
         </div>
-        
+
     </div>
 <!-- End of page content................................................................................-->
- 
+
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    
+
 <!--    Links to my JS-->
     <script src="/js/pomodoro.js"></script>
 </body>
-    
-    
+
+
 </html>

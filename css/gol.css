@@ -10,18 +10,18 @@ td {
 }
 
 .dead {
-  
+
     background-color: #fcfdff;
 }
 
 .unseen {
-    background-color: #2d2d2d;
+    background-color: #181818;
     border: none;
 }
 
 table {
     margin: 2% auto;
-    
+
 }
 
 #world {
@@ -42,16 +42,20 @@ li p {
 }
 
 button {
-    margin:1%;
+    margin:5px;
     border-style: none;
     border-radius: 5px;
-    padding: 7px;
+    padding: 2px;
     cursor: pointer;
 }
 
 button p {
-    margin-bottom: 0px;
+   color: #181818;
     opacity: 1;
+}
+
+button:focus {
+   outline: none;
 }
 
 ol {

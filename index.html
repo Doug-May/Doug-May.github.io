@@ -4,77 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>Portfolio</title>
+  <title>Doug May</title>
 
 <!--    Links to outside stylesheets-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
 <!--    Links to fonts-->
-<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
 
 <!--    links to my stylesheets-->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/animate.css">
-    
-
-<!--    Link to Favicon-->  
-<link rel="icon" href="./img/favicon.ico?" type="image/x-icon">   
 
 
-  
+<!--    Link to Favicon-->
+<link rel="icon" href="./img/favicon.ico?" type="image/x-icon">
+
+
+
 </head>
 
 <body class="fadeIn">
-  
-
-<!-- Header section here -->
-<div id="header" class="container">
-    <div id="headerButton" class="accent animated fadeInDown"></div>
-    <div id="nameCard">
-        <h1 class="animated fadeInDown" id="titleName">DOUG MAY</h1>
-        <div class="animated fadeInUp">
-            <h3>dougmay17@gmail.com</h3>
-            <h3>801-300-0256</h3>
-            <img class="social" src="/img/IG.png"><img class="social" src="/img/FB.png"><img class="social" src="/img/Twitter.png">
-        </div>
-    </div>
-    
-<!--
-    <div id="links" class="hidden downQuick">
-        <a>ABOUT</a>
-        <a href="/pages/projects.html">PROJECTS</a>
-        <a>CONTACT</a>
-    </div>
--->
-    
-    <div id="headerCollapse" class="accent text-center">
-        <div id="links" class="hidden animated">
-            <a>ABOUT</a>
-            <a href="/pages/projects.html">PROJECTS</a>
-            <a>CONTACT</a>
-        </div>
-    
-    </div>
-    
-    <img id="hamburger" src="/img/hamburgerDark.png" class="animated fadeIn">
-    
-</div>
-    
-
-
 <!-- Page content all goes here!! ..............................................................-->
 
 
+   <div class="header" id="header">
+      <div class="header-overlay">
+         <img id="down" src="/img/down.png" alt="">
+      </div>
+      <div class="header-content container text-center animatedDelay fadeIn">
+         <h1 id="title">DOUG MAY</h1>
+         <h2>Composer </h2><span class="divider">|</span> <h2>Sound Designer</h2> <span class="divider">|</span> <h2>Web Developer</h2>
+         <div id="socials">
+            <a href="https://github.com/Doug-May" target="a_blank"><img class="social" src="/img/github.png" alt=""></a>
+            <a href="https://www.instagram.com/drobertmay/" target="a_blank"><img class="social" src="/img/insta.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=529351823" target="a_blank"><img class="social" src="/img/fb.png" alt=""></a>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="section-light">
+      <div id="about" class="container text-center">
+         <div class="row animated fadeIn">
+            <div class="col-md-3">
+               <img id="doug" src="/img/doug.jpg" alt="">
+            </div>
+            <div class="col-md-9">
+               <p>Hi, my name is Doug May. I'm a Utah based composer and sound designer who also dabbles in programming and web development. You can check out some of my music and sound work <a href="https://bythewaymay.com/" target="a_blank">here</a>. Below are some of the web-based projects that I've been working on.</p>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+
+
+   <div class="projects" id="projects">
+      <div class="projects-overlay"></div>
+         <div class="projects-content container animated fadeIn">
+               <div class="text-center">
+                  <h2>Projects</h2>
+                  <div style="height: 40px;"></div>
+               </div>
+               <ul>
+                  <li><a href="/pages/pomodoro.html"><h3>Pomodoro Clock</h3></a></li>
+                  <li><a href="/pages/calculator.html"><h3>Javascript Calculator</h3></a></li>
+                  <li><a href="/pages/GOL.html"><h3>Conway's Game of Life</h3></a></li>
+                  <li><a href="/pages/weather.html"><h3>Current Weather</h3></a></li>
+                  <li><a href="/pages/8Ball.html"><h3>Magic 8 Ball</h3></a></li>
+                  <li><a href="/pages/quote.html"><h3>Random Quote Machine</h3></a></li>
+                  <li><a href="/pages/wiki.html"><h3>Wikipedia Viewer</h3></a></li>
+                  <li><a href="/pages/twitch.html"><h3>Twitch Viewer</h3></a></li>
+                  <li><a href="/pages/colors.html"><h3>Amelia's Colors</h3></a></li>
+               </ul>
+         </div>
+   </div>
+
+
 <!-- End of page content................................................................................-->
-  
-    
+
+
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    
+
 <!--    Links to my JS-->
     <script data-turbolinks-eval=always src="js/index.js"></script>
 

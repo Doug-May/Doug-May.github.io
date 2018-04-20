@@ -1,5 +1,6 @@
 body {
-  background-color: #2d2d2d;
+   margin: 0;
+   background-color: #181818;
 }
 
 .hidden {
@@ -7,46 +8,60 @@ body {
 }
 
 .accent {
-    background-color: #435b5e;
+    background-color: #4e5b6d;
+}
+
+h1,h2,h3,h4,h5,p {
+   font-family: 'Roboto Condensed', sans-serif;
+   margin: 10px 10px;
+   color: #8a8a8a;
 }
 
 h1 {
     letter-spacing: 4px;
     font-weight: 100;
-    font-family: "Abel", sans-serif;
     font-size: 35px;
-    color: #d0d0d0;
 }
 
 h2 {
     letter-spacing: 4px;
     font-weight: 100;
-    font-family: "Abel", sans-serif;
     font-size: 18px;
-    color: #d0d0d0;
 }
 
 h3 {
     opacity: 0.6;
     letter-spacing: 2px;
     font-weight: 100;
-    font-family: "Abel", sans-serif;
     font-size: 12px;
-    color: #d0d0d0;
 }
 
 p {
     opacity: 0.6;
     letter-spacing: 2px;
-    font-weight: 100;
-    font-family: "Abel", sans-serif;
-    font-size: 13px;
-    color: #d0d0d0;
+    font-size: 17px;
 }
 
 a {
     text-decoration: none !important;
 }
+
+
+a:hover {
+    cursor: pointer;
+}
+
+#backButton {
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+}
+
+#backButton:hover {
+   opacity: 0.8;
+}
+
+
 
 
 .fadeIn {
@@ -85,14 +100,4 @@ a {
     from { opacity: 0; }
     to   { opacity: 1; }
 
-}
-
-*:focus {
-    outline: none;
-}
-
-
-
-a:hover {
-    cursor: pointer;
 }
