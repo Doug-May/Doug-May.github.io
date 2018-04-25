@@ -1,0 +1,51 @@
+#inputs {
+margin-top: 150px;
+}
+
+#diceType, #number, #modifier {
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+
+#number, #modifier {
+   background-color: #d0d0d0;
+   width: 50px;
+   height: 35px;
+   border-radius: 5px;
+   padding-left: 12px;
+
+}
+
+
+#number:focus, #modifier:focus {
+   background-color: white;
+}
+
+#diceType {
+   width: 80px;
+   height: 40px;
+   text-align: center;
+}
+
+#dice{
+   margin-top: 40px;
+   width: 100px;
+   cursor: pointer;
+}
+
+#inputs p{
+   display: inline;
+}
+
+.roll{
+   animation: roll 300ms ease-in-out 1;
+}
+
+@keyframes roll {
+   0% {
+   }
+   100% {
+      transform: rotate(1440deg);
+   }
+}
