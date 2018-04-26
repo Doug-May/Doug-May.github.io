@@ -7,6 +7,14 @@ diceObject.type = 20;
 diceObject.modifier = function(){
    return parseInt(document.getElementById('modifier').value) || 0;
 };
+diceObject.roll = function() {
+   var counter = 0;
+   for(i=0;i<diceObject.number();i++){
+      counter += Math.ceil(Math.random()*diceObject.type);
+   }
+   return counter;
+};
+
 
 //onchange function when user selects a different dice type
 function typeUpdate(option){
@@ -15,25 +23,33 @@ function typeUpdate(option){
 };
 
 //onclick function when user clicks the dice img to make a roll
-document.getElementById('dice').onclick = function(){
-   $("#dice").addClass("roll");
+document.getElementById('dice').onclick = makeRoll;
 
+//onpress enter make the roll
+document.addEventListener("keydown", function(e){
+   if (e.keyCode === 13 && !$("body").hasClass("swal2-shown")){
+      makeRoll();
+   }
+});
+
+//This is the rolling function
+function makeRoll(){
+   $("#dice").addClass("roll");
    setTimeout(function(){
       $("#dice").removeClass("roll");
-      var rollResult = Math.ceil(Math.random()*diceObject.type);
-      var total = rollResult*diceObject.number() + diceObject.modifier();
-
-      if(diceObject.modifier() > 0 && diceObject.number() > 1){
-         sweetAlert({title:"You rolled " + "(" + diceObject.number() + ")" + rollResult + " + " + diceObject.modifier() + " = " + total, confirmButtonColor:"#4e5b6d", confirmButtonText:"OK"});
-      } else if(diceObject.modifier() > 0){
-         sweetAlert({title:"You rolled " + rollResult + " + " + diceObject.modifier() + " = " + total, confirmButtonColor:"#4e5b6d", confirmButtonText:"OK"});
-      } else if(diceObject.number() > 1){
-         sweetAlert({title:"You rolled " + "(" + diceObject.number() + ")" + rollResult + " = " + total, confirmButtonColor:"#4e5b6d", confirmButtonText:"OK"});
-      } else {
-         sweetAlert({title:"You rolled " + rollResult, confirmButtonColor:"#4e5b6d", confirmButtonText:"OK"});
-      }
+      var rollResult = diceObject.roll();
+      sweetAlert({title:"You rolled " + (rollResult + diceObject.modifier()), confirmButtonColor:"#4e5b6d", confirmButtonText:"OK"});
    },400);
-
-
-
 };
+
+//for testing the dice rolling. just want to see if the average is what is expected
+// var testCounter = 0;
+// total = 0;
+// setInterval(function(){
+//    var thisRound = diceObject.roll();
+//    total += thisRound;
+//    testCounter += 1;
+//    if (testCounter == 1000){
+//       alert(total/testCounter);
+//    }
+// },5);
