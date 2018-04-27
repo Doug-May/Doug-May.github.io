@@ -17,6 +17,15 @@ margin-top: 150px;
 
 }
 
+#clear {
+   display: inline;
+   cursor: pointer;
+}
+
+#clear:hover{
+   color: #4e5b6d;
+}
+
 
 #number:focus, #modifier:focus {
    background-color: white;

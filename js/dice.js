@@ -34,6 +34,12 @@ document.addEventListener("keydown", function(e){
 
 //This is the rolling function
 function makeRoll(){
+   if(parseInt(diceObject.number()) > 99) {
+      document.getElementById('message').innerHTML = "That's a lot of dice! Why not just take the average?";
+      return;
+   } else {
+      document.getElementById('message').innerHTML = "";
+   }
    $("#dice").addClass("roll");
    setTimeout(function(){
       $("#dice").removeClass("roll");
@@ -42,14 +48,8 @@ function makeRoll(){
    },400);
 };
 
-//for testing the dice rolling. just want to see if the average is what is expected
-// var testCounter = 0;
-// total = 0;
-// setInterval(function(){
-//    var thisRound = diceObject.roll();
-//    total += thisRound;
-//    testCounter += 1;
-//    if (testCounter == 1000){
-//       alert(total/testCounter);
-//    }
-// },5);
+//clearing function
+document.getElementById('clear').onclick = function(){
+   document.getElementById('modifier').value = "";
+   document.getElementById('number').value = "";
+}
