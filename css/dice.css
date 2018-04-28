@@ -47,6 +47,28 @@ margin-top: 150px;
    display: inline;
 }
 
+h1{
+   margin-top: 40px;
+}
+
+#history{
+   width: 300px;
+   margin: auto;
+}
+
+#history h2{
+   cursor: pointer;
+}
+
+#history h2:hover{
+   color: #4e5b6d;
+}
+
+#message {
+   visibility: hidden;
+}
+
+
 .roll{
    animation: roll 300ms ease-in-out 1;
 }
