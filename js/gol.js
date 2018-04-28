@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
 
 
 
@@ -14,7 +14,7 @@ var clear = document.getElementById("clear");
 
 var tdNodelist = document.getElementsByTagName("td");
 var allCells = tdNodelist.length;
-    
+
 var randomizeFunc = function() {
     for (i=180; i < allCells -180; i++ ) {
             var random = 100*Math.random();
@@ -22,11 +22,11 @@ var randomizeFunc = function() {
                     tdNodelist[i].className = "alive";
                 } else {
                     tdNodelist[i].className = "dead";
-                }     
-        } 
+                }
+        }
 }
 randomizeFunc();
-    
+
 var hideEdges = function() {
     for (i=0;i<180;i++){
         tdNodelist[i].className = "unseen";
@@ -54,7 +54,7 @@ pulsar.onclick = function () {
     for (i=180; i< allCells-180; i++) {
         tdNodelist[i].className = "dead";
     }
-    
+
     //create pattern
     tdNodelist[4005-544].className = "alive";
     tdNodelist[4005-543].className = "alive";
@@ -110,8 +110,8 @@ gun.onclick = function () {
     //set all cells to class "dead"
     for (i=180; i< allCells-180; i++) {
         tdNodelist[i].className = "dead";
-    } 
-    
+    }
+
     tdNodelist[2012].className = "alive";
     tdNodelist[2012+90].className = "alive";
     tdNodelist[2012+88].className = "alive";
@@ -161,7 +161,7 @@ start.onclick = async function () {
 
     do {
     //first count up the neighbors for each cell and store them in an array
-        var neighborArray = new Array(8099);  
+        var neighborArray = new Array(8099);
     for (i=91; i<8008; i++) {
         var neighbor = 0;
         if (tdNodelist[i-91].className === "alive"){
@@ -190,33 +190,33 @@ start.onclick = async function () {
         }
         neighborArray[i-91] = neighbor;
     }
-        
+
         //determine next state of cell. THE FOUR RULES OF THE GAME OF LIFE!!
-     for (i=91; i<=8008; i++) {  
+     for (i=91; i<=8008; i++) {
         if (tdNodelist[i].className === "alive" && neighborArray[i-91]<2) {
             tdNodelist[i].className = "dead";
         }
         if (tdNodelist[i].className === "alive" && neighborArray[i-91] === 2) {
             tdNodelist[i].className = "alive";
-          
-            
+
+
         }
         if (tdNodelist[i].className === "alive" && neighborArray[i-91]===3) {
             tdNodelist[i].className = "alive";
-          
+
         }
         if (tdNodelist[i].className === "alive" && neighborArray[i-91]>3) {
             tdNodelist[i].className = "dead";
-           
+
         }
         if (tdNodelist[i].className === "dead" && neighborArray[i-91]===3) {
             tdNodelist[i].className = "alive";
-           
+
         }
-      } 
+      }
     hideEdges();
-    await sleep(25);
-        
+    await sleep(30);
+
     } while (pause === false);
 }
 
@@ -226,7 +226,7 @@ stop.onclick = function () {
     //toggle button
     this.style.visibility = "hidden";
     start.style.visibility = "visible";
-    
+
     // break out of loop
     pause = true;
     run = true;
@@ -241,7 +241,7 @@ clear.onclick = function () {
     }
 }
 //....................................................................................
-   
+
 
 
 })

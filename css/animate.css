@@ -26,16 +26,22 @@
 .animatedDelay {
   animation-duration: 1s;
   animation-fill-mode: both;
-  animation-delay: 700ms;
+  animation-delay: 500ms;
 }
 
 .animatedDelay2 {
   animation-duration: 1s;
   animation-fill-mode: both;
-  animation-delay: 900ms;
+  animation-delay: 700ms;
 }
 
 .animatedDelay3 {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 900ms;
+}
+
+.animatedDelay4 {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 1100ms;

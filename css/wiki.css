@@ -4,6 +4,11 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
 }
 
+#clear{
+   cursor: pointer;
+   height: 25px;
+}
+
 input[type=text] {
     transition: 300ms;
     border-radius: 20px;
@@ -18,15 +23,12 @@ input[type=text] {
 /* When the input field gets focus, change its width*/
 input[type=text]:focus {
    outline: none;
-    width: 90%;
     background-color: #f0f0f0;
-    max-width: 550px;
 }
 
 .search {
-    transition: 200ms;
     margin-top: 20px;
-    color: #769693;
+    color: #4e5b6d;
     margin-bottom: 80px;
 }
 
@@ -45,7 +47,7 @@ input[type=text]:focus {
 }
 
 .resultBlock {
-    background-color: #4c4c4c;
+    background-color: #252526;
     margin: 20px;
     padding: 2px 15px;
     border-radius: 10px;
@@ -53,9 +55,8 @@ input[type=text]:focus {
 }
 
 .resultBlock h2 {
-    transition: 200ms;
     margin-top: 10px;
-    color: #769693;
+    color: #4e5b6d;
 }
 
 .resultblock h2:hover {
@@ -68,9 +69,8 @@ input[type=text]:focus {
 }
 
 #random {
-    transition: 200ms;
     text-decoration: none;
-    color: #769693;
+    color: #4e5b6d;
 }
 
 #random:hover {
@@ -103,8 +103,8 @@ input[type=text]:focus {
     top: 0px;
     left: 0px;
     border: 1px solid transparent;
-    border-top-color: #769693;
-    border-bottom-color: #769693;
+    border-top-color: #4e5b6d;
+    border-bottom-color: #4e5b6d;
     animation: spin 500ms linear infinite
 }
 
