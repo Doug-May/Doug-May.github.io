@@ -30,6 +30,10 @@ button {
     padding: 7px;
 }
 
+button:hover {
+   opacity: 0.7;
+}
+
 button:focus{
    outline: none;
 }

@@ -3,7 +3,7 @@ $(document).ready(function() {
     var currentAuthor = "";
 
     //grab first quote
-    $.getJSON("https://cors-anywhere.herokuapp.com/https://talaikis.com/api/quotes/random/", function(a) {
+   $.getJSON("https://cors-anywhere.herokuapp.com/https://talaikis.com/api/quotes/random/", function(a) {
             $("#quote").html('"' + a.quote + '"');
             $("#author").html("- " + a.author);
             $("#tweet").removeClass("hidden");
@@ -11,7 +11,7 @@ $(document).ready(function() {
          //remove hidden css
         currentQuote = a.quote;
         currentAuthor = a.author;
-        });
+   });
 
     //get new quote when button is clicked and change colors.........
     $("#getQuote").click(function() {
