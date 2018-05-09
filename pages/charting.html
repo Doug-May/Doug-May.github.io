@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+
+
+<!-- link to Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<!--    Link to sweetalert-->
+<script src="../js/sweetalert2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/sweetalert2.min.css">
+
+<!-- my stylesheet -->
+<link rel="stylesheet" href="../css/charting.css">
+
+</head>
+<body>
+
+   <div class="container">
+
+      <a href="./charting.html"><div id="clearAll">Clear All</div></a>
+
+      <div style="height: 60px"></div>
+      <div class="section-wrapper">
+         <h1>Orientation</h1>
+         <div class="item">
+            <input name="orientation" type="radio" id="1">
+            <label for="contactChoice1">A&O</label>
+         </div>
+
+         <div class="item">
+            <input name="orientation" type="radio" id="2">
+            <label for="contactChoice2">A&O + Forgetful</label>
+         </div>
+
+         <div class="item">
+            <input name="orientation" type="radio" id="3">
+            <label for="contactChoice3">A&O x1</label>
+         </div>
+         <div class="item">
+            <input name="orientation" class="textInput" type="text" id="4">
+         </div>
+      </div>
+
+      <div class="section-wrapper">
+         <h1>Lungs</h1>
+         <div class="item">
+            <input name="lungs" type="radio" id="5">
+            <label for="contactChoice1">CTA</label>
+         </div>
+         <div class="item">
+            <input class="textInput" type="text" id="6">
+         </div>
+      </div>
+
+      <div class="section-wrapper">
+         <h1>Cardiac</h1>
+         <div class="item">
+            <input name="cardiac" type="radio" id="7">
+            <label for="contactChoice1">HRRR</label>
+         </div>
+         <div class="item">
+            <input class="textInput" type="text" id="8">
+         </div>
+      </div>
+
+      <div class="section-wrapper">
+         <h1>Edema</h1>
+         <div class="item">
+            <input name="edema" type="radio" id="9">
+            <label for="contactChoice1">No Edema</label>
+         </div>
+         <div class="item">
+            <input class="textInput" type="text" id="10">
+         </div>
+      </div>
+
+      <div class="section-wrapper">
+         <h1>Bowel Sounds</h1>
+         <div class="item">
+            <input name="bowel" type="radio" id="11">
+            <label for="contactChoice1">Normal</label>
+         </div>
+         <div class="item">
+            <input name="bowel" type="radio" id="12">
+            <label for="contactChoice1">Decreased</label>
+         </div>
+         <div class="item">
+            <label for="contactChoice2">Last bowel movement on:</label>
+            <input class="textInput bowelInput" type="text" id="13">
+         </div>
+      </div>
+
+      <div class="section-wrapper">
+         <h1>Education</h1>
+         <div class="item">
+            <input class="textInput" type="text" id="14">
+         </div>
+      </div>
+
+      <div class="section-wrapper">
+         <h1>MD Notified</h1>
+         <div class="item">
+            <input class="textInput" type="text" id="15">
+         </div>
+      </div>
+
+      <div class="section-wrapper">
+         <h1>New Orders</h1>
+         <div class="item">
+            <input class="textInput" type="text" id="16">
+         </div>
+      </div>
+
+      <div class="section-wrapper">
+         <h1>Visit Summary</h1>
+         <div class="item">
+            <input class="textInput" type="text" id="17">
+         </div>
+      </div>
+
+
+      <div class="text-center">
+         <button onclick="generateText()" class="btn btn-primary ">Generate Text</button>
+      </div>
+         <div style="height: 90px"></div>
+
+   </div>
+
+
+<!-- bootstrap, jquery, poppper j -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+   <script src="../js/charting.js"></script>
+
+</body>
+</html>
