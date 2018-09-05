@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/clock.css">
+    <link rel="stylesheet" href="../css/animate.css">
+
+
+</head>
+<body class="dark">
+
+    <div id="app">
+        <div id="display">
+            <div id="clock" class="light animatedSlow bounceIn">
+                <div 
+                id="center" 
+                class="dark"
+                ></div>
+                <div 
+                id="hour" 
+                class="dark"
+                v-bind:style="{transform: 'rotate(' + hourRotation + 'deg)'}"
+                ></div>
+                <div 
+                id="minute" 
+                class="dark"
+                v-bind:style="{transform: 'rotate(' + minuteRotation + 'deg)'}"
+                ></div>
+                <div 
+                id="second" 
+                class="dark" 
+                v-bind:style="{transform: 'rotate(' + secondRotation + 'deg)'}"
+                ></div>
+            </div>
+            <h1 class="animatedDelay fadeInUp" id="digital">{{ hour }}:<span v-if="minute < 10">0</span>{{ minute }}:<span v-if="second < 10">0</span>{{ second }}
+            <span v-if="isPM">PM</span>
+            <span v-else>AM</span>
+            </h1>
+            <h3 class="animatedDelay4 fadeInDown">{{ greeting }}</h3>
+        </div>        
+    </div>
+
+    <!-- link to clock.js -->
+    <script src="../js/clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.dark{
+    background-color: #181818
+}
+
+.light{
+    background-color: #9fa1a5;
+}
+
+#display{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#center{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    left: 87px;
+    top: 87px;
+}
+
+#clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#hour{
+    position: absolute;
+    width: 12px;
+    height: 76px;
+    border-radius: 10px;
+    left: 94px;
+    top: 24px;
+    transform-origin: bottom center;
+      /* transform: translate(91px, 30px); */
+}
+
+#minute{
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    border-radius: 10px;
+    left: 96px;
+    top: 10px;
+    transform-origin: bottom center;
+    /* transform: translate(93px, 10px); */
+}
+
+#second{
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    border-radius: 30px;
+    left: 99px;
+    top: 20px;
+    transform-origin: bottom center;
+    /* transform: translate(99px, 10px); */ 
+}
+
+h1, h3{
+    color: #b5bfce;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-size: 11px;
+    margin-top: -25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}

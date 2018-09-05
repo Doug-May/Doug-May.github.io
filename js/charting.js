@@ -72,7 +72,7 @@ function generateText() {
 
    //return message if finalString is empty, otherwise copy it to the clipboard
    if(finalString === ""){
-      sweetAlert({title:"Nothing to generate!", confirmButtonColor:"#4e5b6d", confirmButtonText:"OK"});
+      sweetAlert({title:"Nothing to generate!", confirmButtonColor:"#0070ff", confirmButtonText:"OK"});
    } else {
       //copy the finalString to the clipboard and alert the user. finally reset the string
       const el = document.createElement('textarea');
@@ -81,7 +81,7 @@ function generateText() {
       el.select();
       document.execCommand('copy');
       document.body.removeChild(el);
-      sweetAlert({title:"Your text was copied to the clipboard!", confirmButtonColor:"#4e5b6d", confirmButtonText:"OK"});
+      sweetAlert({title:"Your text was copied to the clipboard!", confirmButtonColor:"#0070ff", confirmButtonText:"OK"});
       finalString = "";
    }
 
