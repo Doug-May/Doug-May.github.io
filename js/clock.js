@@ -39,8 +39,8 @@ let app = new Vue ({
                 if(this.hour>12) {
                     this.isPM = true;
                     this.hour -= 12;
-                } else if (this.hours === 0) {
-                    this.hours = 12;
+                } else if (this.hour === 0) {
+                    this.hour = 12;
                 }
         }
     },

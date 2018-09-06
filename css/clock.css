@@ -68,9 +68,13 @@ h1, h3{
     text-align: center;
 }
 
+h1{
+    font-size: 28px;
+}
+
 h3{
-    font-size: 11px;
-    margin-top: -25px;
+    font-size: 10px;
+    margin-top: -22px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
